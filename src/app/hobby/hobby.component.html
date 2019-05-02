@@ -1,0 +1,21 @@
+
+	<html>
+      <head>
+        <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+      </head>
+      <body>
+    <div class="tz-gallery">
+      
+       <div class="row">   
+            <div class="card" style="width: 18rem;" *ngFor="let t of allDetails.data">
+                <a class="lightbox" href="https://scontent.cdninstagram.com/vp/{{t.images.standard_resolution.url | slice:37:198 }}"><img src="https://scontent.cdninstagram.com/vp/{{t.images.standard_resolution.url | slice:37:198 }}" class="card-img-top" alt="Trails"></a>
+                <div class="card-body">
+                   <b><h4>{{t.likes.count}} <i class="fa fa-thumbs-o-up" aria-hidden="true" style="color:rgb(46, 46, 172)"></i></h4></b>
+                  <p class="card-text">{{t.caption.text}}</p>  
+                </div>
+              </div>
+            </div>
+        </div>
+    </body>
+    </html>

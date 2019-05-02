@@ -1,0 +1,11 @@
+h1,h2{
+    color: seagreen;
+}
+a{
+    opacity: 0.6;
+    transition: 0.2s;
+	color:#FFFF00
+}
+
+a:hover {opacity: 3}
+

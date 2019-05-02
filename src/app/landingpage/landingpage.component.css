@@ -1,0 +1,85 @@
+html,
+body {
+	background: #164796;
+	background-size: auto;
+}
+
+.eyes {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	text-align: center;
+}
+
+.eye {
+	width: 240px;
+	height: 120px;
+	background: #fff;
+	display: inline-block;
+	margin: 40px;
+	border-radius: 50%;
+	position: relative;
+	overflow: hidden;
+
+}
+
+.eye-lid {
+	width: 240px;
+	height: 120px;
+	background: #fff;
+	display: inline-block;
+	margin: 40px;
+	border-radius: 50%;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0.03em 0.14em rgba(0, 0, 0, 0.1);
+	animation: blink forwards infinite 10s ease-in-out;
+}
+
+.ball {
+	width: 50px;
+	height: 50px;
+	background: #000;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	border: 15px solid #333;
+}
+
+
+
+.eyedisplay {
+	align-self: auto;
+	padding-top: 50%;
+}
+
+
+.mouth {
+	border-bottom-right-radius: 200px;
+	border-bottom-left-radius: 200px;
+	height: 155px;
+	background-color: #fff;
+	text-align: center;
+	width: 350px;
+	margin-left: 500px;
+
+}
+
+@keyframes blink {
+
+	0%,
+	2%,
+	60%,
+	62%,
+	100% {
+		transform: scaleX(1) scaleY(1);
+	}
+
+	1%,
+	61% {
+		transform: scaleX(1.3) scaleY(0.1);
+}}
+
